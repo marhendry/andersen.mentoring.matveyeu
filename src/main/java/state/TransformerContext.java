@@ -1,6 +1,6 @@
 package state;
 
-public class TransformerContext implements TransformerStateInterface{
+public class TransformerContext implements TransformerStateInterface {
     private TransformerStateInterface state;
 
     public TransformerStateInterface getState() {

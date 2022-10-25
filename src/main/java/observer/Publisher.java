@@ -2,7 +2,7 @@ package observer;
 
 import java.util.ArrayList;
 
-public class Publisher implements PublisherInterface{
+public class Publisher implements PublisherInterface {
     private ArrayList<PublisherActionListener> listeners = new ArrayList<>();
 
     @Override
@@ -12,27 +12,28 @@ public class Publisher implements PublisherInterface{
 
     @Override
     public void addListener(PublisherActionListener listener) {
-listeners.add(listener);
+        listeners.add(listener);
     }
 
     @Override
     public void removeListener(PublisherActionListener listener) {
-listeners.remove(listener);
+        listeners.remove(listener);
     }
 
     @Override
     public void removeAllListeners() {
-listeners.clear();
+        listeners.clear();
     }
 
     @Override
     public void notifyAllSubscribers(String message) {
-for (PublisherActionListener actionListener : listeners){
-    actionListener.doAction(message);
-}
+        for (PublisherActionListener actionListener : listeners) {
+            actionListener.doAction(message);
+        }
     }
-    public void createMessage(String message){
-        System.out.println("Publisher printed message "+message);
+
+    public void createMessage(String message) {
+        System.out.println("Publisher printed message " + message);
         notifyAllSubscribers(message);
     }
 }

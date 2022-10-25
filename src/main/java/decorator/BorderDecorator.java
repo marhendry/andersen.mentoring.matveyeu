@@ -1,10 +1,11 @@
 package decorator;
 
-public class BorderDecorator extends Decorator{
+public class BorderDecorator extends Decorator {
 
-public BorderDecorator(Component component){
-    super(component);
-}
+    public BorderDecorator(Component component) {
+        super(component);
+    }
+
     @Override
     public void afterDraw() {
         System.out.println("...added border");

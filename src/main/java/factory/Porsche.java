@@ -1,6 +1,6 @@
 package factory;
 
-public class Porsche implements Car{
+public class Porsche implements Car {
     @Override
     public void drive() {
         System.out.println("Drive speed is 180 km/h");

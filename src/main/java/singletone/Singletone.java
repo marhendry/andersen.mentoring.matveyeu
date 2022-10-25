@@ -1,18 +1,19 @@
 package singletone;
 
 public class Singletone {
-    public static Singletone st;
+    public static Singletone singletone;
 
-    //синхронизируем на случай, если будет использована многопоточность
-    public static synchronized Singletone getInstance(){
-        if (st==null){
-            st = new Singletone();
+    public static synchronized Singletone getInstance() {
+        if (singletone == null) {
+            singletone = new Singletone();
         }
-        return st;
+        return singletone;
     }
 
-    private Singletone() {}
-    public void print(){
+    private Singletone() {
+    }
+
+    public void print() {
         System.out.println(this);
     }
 }

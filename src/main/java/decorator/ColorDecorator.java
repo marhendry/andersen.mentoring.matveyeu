@@ -1,7 +1,7 @@
 package decorator;
 
-public class ColorDecorator extends Decorator{
-    public ColorDecorator(Component component){
+public class ColorDecorator extends Decorator {
+    public ColorDecorator(Component component) {
         super(component);
     }
 

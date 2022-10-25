@@ -1,6 +1,6 @@
 package decorator;
 
-public class Window implements Component{
+public class Window implements Component {
     @Override
     public void draw() {
         System.out.println("Draw window");
