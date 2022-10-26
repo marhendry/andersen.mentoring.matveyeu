@@ -1,10 +1,10 @@
-package linkedList;
+package arrayAndLinkedLists;
 
 import java.util.LinkedList;
 //implements List<E>, Deque<E>, Cloneable, java.io.Serializable
 //
 
-public class LinkedListTest {
+public class LinkedList1 {
     public static void main(String[] args) {
         LinkedList<String> list = new LinkedList<>();
 

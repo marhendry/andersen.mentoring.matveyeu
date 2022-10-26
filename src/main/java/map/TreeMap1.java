@@ -3,7 +3,7 @@ package map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
-public class TreeMapTest {
+public class TreeMap1 {
     public static void main(String[] args) {
         SortedMap<String, Double> treeMap = new TreeMap<>();
 

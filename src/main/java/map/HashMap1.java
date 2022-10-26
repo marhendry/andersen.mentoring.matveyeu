@@ -1,11 +1,10 @@
 package map;
 
-import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class HashMapTest {
-    public HashMapTest() {
+public class HashMap1 {
+    public HashMap1() {
         super();
     }
 
@@ -27,7 +26,7 @@ public class HashMapTest {
     public static void main(String[] args) {
 
 
-        Map<String, Double> hashMap = new HashMap<>();
+        Map<String, Double> hashMap = new java.util.HashMap<>();
 
         hashMap.put("Иванов", 3434.34);
         hashMap.put("Петров", 123.22);

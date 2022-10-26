@@ -1,10 +1,8 @@
 package queue;
 
-import java.util.ArrayList;
 import java.util.LinkedList;
-import java.util.List;
 
-public class Queue {
+public class Queue1 {
     public static void main(String[] args) {
         java.util.Queue<String> queue = new LinkedList<>();
         queue.offer("Kyiv");
