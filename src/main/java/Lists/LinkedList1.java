@@ -1,4 +1,4 @@
-package arrayAndLinkedLists;
+package Lists;
 
 import java.util.LinkedList;
 //implements List<E>, Deque<E>, Cloneable, java.io.Serializable
@@ -16,7 +16,7 @@ public class LinkedList1 {
         list.addLast("Z");
         list.addFirst("A");
         list.add(1, "A2");
-        System.out.println("Содержимое: " + list);
+        System.out.println("LinkedList contains the following: " + list);
         System.out.println("-------------------");
 
         System.out.println(list.getFirst()+" "+list.getLast());
@@ -29,10 +29,10 @@ public class LinkedList1 {
 
         list.removeFirst();
         list.removeLast();
-        System.out.println("Содержимое после удаления: " + list);
+        System.out.println("LinkedList after remove method: " + list);
 
         String val = list.get(2);
         list.set(2, val + "+");
-        System.out.println("Содержимое после изменения: " + list);
+        System.out.println("LinkedList after minor changes: " + list);
     }
 }

@@ -1,12 +1,10 @@
-package arrayAndLinkedLists;
+package Lists;
 
 import java.util.List;
 
 public class ArrayList1 {
     public static void main(String[] args) {
         List<String> list = new java.util.ArrayList<>();
-
-        System.out.println("Initial list size: " + list.size());
 
         list.add("C");
         list.add("A");
