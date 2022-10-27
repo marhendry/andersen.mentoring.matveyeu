@@ -1,8 +1,11 @@
 package treeSet;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.SortedSet;
 import java.util.TreeSet;
 
+@Slf4j
 public class TreeSet1 {
     public static void main(String[] args) {
         SortedSet<String> set = new TreeSet<>();
@@ -12,14 +15,9 @@ public class TreeSet1 {
         set.add("Vilnius");
         set.add("Riga");
 
-        System.out.println(set);
+        log.info("Set after add method" + set);
 
         SortedSet<String> subSet = set.subSet("Kyiv", "Vilnius");
-        System.out.println("SubSet: " + subSet);
-
-        System.out.println("HeadSet: " + set.headSet("Vilnius"));
-        System.out.println("TailSet: " + set.tailSet("Riga"));
-        System.out.println("First element: " + set.first());
-        System.out.println("Last element: " + set.last());
+        log.info("Set after subSet was implemented" + set);
     }
 }

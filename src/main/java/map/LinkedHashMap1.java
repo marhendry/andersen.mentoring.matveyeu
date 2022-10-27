@@ -1,7 +1,10 @@
 package map;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.util.LinkedHashMap;
 
+@Slf4j
 public class LinkedHashMap1 {
     public static void main(String[] args) {
         LinkedHashMap<String, Integer> wordNumberMapping = new LinkedHashMap<>(16, 0.75f);
@@ -10,11 +13,9 @@ public class LinkedHashMap1 {
         wordNumberMapping.put("two", 2);
         wordNumberMapping.put("three", 3);
         wordNumberMapping.put("four", 4);
-        System.out.println(wordNumberMapping);
-        System.out.println("-------------------------");
-        System.out.println(wordNumberMapping.get("one"));
+
+        log.info("LinkedHashMap after manipulations" + wordNumberMapping);
         wordNumberMapping.putIfAbsent("five", 5);
-        System.out.println(wordNumberMapping);
-        System.out.println("-------------------------");
+
     }
 }

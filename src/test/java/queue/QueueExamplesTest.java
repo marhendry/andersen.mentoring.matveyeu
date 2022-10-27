@@ -14,7 +14,7 @@ public class QueueExamplesTest {
     final String city5 = "Warsaw";
 
     @Test
-    void queueTest() {
+    void queueBasicMethodsTest() {
         Queue<String> queue = new LinkedList<>();
         queue.offer("Kyiv");
         queue.offer("Minsk");

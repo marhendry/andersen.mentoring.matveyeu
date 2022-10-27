@@ -22,7 +22,7 @@ class MapExamplesTest {
         final String city5 = "Warsaw";
 
         @Test
-        void hashMapTest() {
+        void hashMapBasicMethodsTest() {
 
             Map<String, String> map = new HashMap<>();
             map.put(name1, city1);
@@ -42,7 +42,7 @@ class MapExamplesTest {
         }
 
         @Test
-        void treeMapTest() {
+        void treeMapBasicMethodsTest() {
             Map<String, String> map = new TreeMap<>();
             map.put(name1, city1);
             map.put(name2, city2);
@@ -61,7 +61,7 @@ class MapExamplesTest {
         }
 
         @Test
-        void linkedHashMapTest() {
+        void linkedHashMapBasicMethodsTest() {
             Map<String, String> map = new LinkedHashMap<>();
             map.put(name1, city1);
             map.put(name2, city2);

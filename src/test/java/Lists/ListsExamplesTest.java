@@ -9,21 +9,21 @@ import static org.junit.jupiter.api.Assertions.*;
 class ListsExamplesTest {
 
     @Test
-    void arrayListAddEmpty() {
+    void arrayListAddingEmptyListTest() {
         ArrayList<String> list = new ArrayList<>();
         ListsExamples.listAdd(list);
         assertTrue(list.isEmpty());
     }
 
     @Test
-    void arrayListAddNotEmpty() {
+    void arrayListAddingValuesTest() {
         ArrayList<String> list = new ArrayList<>();
         ListsExamples.listAdd(list, "A", "A", "B");
         assertEquals(3, list.size());
     }
 
     @Test
-    void arrayListRemove() {
+    void arrayListRemoveTest() {
         ArrayList<String> list = new ArrayList<>();
         list.add("a");
         list.add("b");
@@ -33,21 +33,21 @@ class ListsExamplesTest {
     }
 
     @Test
-    void linkedListAddNotEmpty() {
+    void linkedListAddingValuesTest() {
         LinkedList<String> list = new LinkedList<>();
         ListsExamples.listAdd(list, "A", "A", "B");
         assertEquals(3, list.size());
     }
 
     @Test
-    void linkedListAddEmpty() {
+    void linkedListAddingEmptyListTest() {
         LinkedList<String> list = new LinkedList<>();
         ListsExamples.listAdd(list);
         assertTrue(list.isEmpty());
     }
 
     @Test
-    void linkedListRemove() {
+    void linkedListRemoveTest() {
         LinkedList<String> list = new LinkedList<>();
         list.add("a");
         list.add("b");
@@ -57,7 +57,7 @@ class ListsExamplesTest {
     }
 
     @Test
-    void linkedListOrdering() {
+    void linkedListGetMethodTest() {
         List<String> list = new LinkedList<>();
         ListsExamples.listAdd(list, "a", "b", "c");
         assertEquals("a", list.get(0));

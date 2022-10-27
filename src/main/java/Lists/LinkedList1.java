@@ -1,9 +1,10 @@
 package Lists;
 
-import java.util.LinkedList;
-//implements List<E>, Deque<E>, Cloneable, java.io.Serializable
-//
+import lombok.extern.slf4j.Slf4j;
 
+import java.util.LinkedList;
+
+@Slf4j
 public class LinkedList1 {
     public static void main(String[] args) {
         LinkedList<String> list = new LinkedList<>();
@@ -16,23 +17,16 @@ public class LinkedList1 {
         list.addLast("Z");
         list.addFirst("A");
         list.add(1, "A2");
-        System.out.println("LinkedList contains the following: " + list);
-        System.out.println("-------------------");
-
-        System.out.println(list.getFirst()+" "+list.getLast());
-        System.out.println("-------------------");
+        log.info("LinkedList contains the following after changes: " + list);
 
         list.remove("Z");
         list.remove(2);
-        System.out.println(list.getFirst()+" "+list.getLast());
-        System.out.println("-------------------");
-
         list.removeFirst();
         list.removeLast();
-        System.out.println("LinkedList after remove method: " + list);
+        log.info("LinkedList after remove elements: " + list);
 
         String val = list.get(2);
         list.set(2, val + "+");
-        System.out.println("LinkedList after minor changes: " + list);
+        log.info("LinkedList after minor changes: " + list);
     }
 }

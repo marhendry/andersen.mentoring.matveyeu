@@ -1,7 +1,9 @@
 package queue;
 
-import java.util.LinkedList;
+import lombok.extern.slf4j.Slf4j;
 
+import java.util.LinkedList;
+@Slf4j
 public class Queue1 {
     public static void main(String[] args) {
         java.util.Queue<String> queue = new LinkedList<>();
@@ -10,16 +12,12 @@ public class Queue1 {
         queue.offer("Vilnius");
         queue.offer("Riga");
 
-        System.out.println(queue);
-        System.out.println("------------------");
-        System.out.println(queue.peek());
-        System.out.println("------------------");
-        System.out.println(queue);
-
+        log.info("Queue after manipulations" + queue);
+        
         String town;
         while ((town = queue.poll()) != null) {
             System.out.println(town);
         }
-        System.out.println(queue);
+        log.info("Queue after polling" + queue);
     }
 }
